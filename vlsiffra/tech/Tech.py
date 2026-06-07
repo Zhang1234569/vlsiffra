@@ -1,6 +1,7 @@
 from .sky130hd import SKY130HDProcess
 from .asap7 import ASAP7Process
 from .gf180mcu import GF180MCUProcess
+from .ihpsg13g2 import IHPSG13G2Process
 from .none import NoneProcess
 
 
@@ -16,6 +17,8 @@ class Tech:
                 tech = ASAP7Process
             elif name == 'gf180mcu':
                 tech = GF180MCUProcess
+            elif name == 'ihpsg13g2':
+                tech = IHPSG13G2Process
             else:
                 raise Exception('Unknown Technology')
         return tech
