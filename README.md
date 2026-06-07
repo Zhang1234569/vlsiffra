@@ -77,7 +77,8 @@ used to further verify the design.
 
 vlsiffra currently supports the
 [SkyWater sky130hd](https://github.com/google/skywater-pdk),
-[GlobalFoundries GF180MCU](https://github.com/google/gf180mcu-pdk) and
+[GlobalFoundries GF180MCU](https://github.com/google/gf180mcu-pdk),
+[IHP SG13G2](https://github.com/IHP-GmbH/IHP-Open-PDK) and
 [ASAP7](https://github.com/The-OpenROAD-Project/asap7) PDKs and standard cell
 libraries.
 
@@ -113,6 +114,12 @@ Create a GF180MCU 64 bit Kogge-Stone adder:
 
 ```
 vlsi-adder --bits=64 --algorithm=koggestone --tech=gf180mcu --output=adder.v
+```
+
+Create an IHP SG13G2 64 bit Kogge-Stone adder:
+
+```
+vlsi-adder --bits=64 --algorithm=koggestone --tech=ihp-sg13g2 --output=adder.v
 ```
 
 Create an ASAP7 32 bit multiplier, using a Brent-Kung adder:

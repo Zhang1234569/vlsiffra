@@ -38,7 +38,8 @@ if __name__ == "__main__":
                         help='Add power pins (eg VPWR/VGND)')
 
     parser.add_argument('--tech',
-                        help='What technology to build for (none (default), sky130hd, asap7, gf180mcu)')
+                        help='What technology to build for '
+                             '(none (default), sky130hd, asap7, gf180mcu, ihpsg13g2)')
 
     parser.add_argument('--algorithm',
                         help='Adder algorithm (brentkung (default), koggestone, hancarlson, inferred, ripple)')
